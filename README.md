@@ -24,7 +24,7 @@ Die Carrier-Zugangsdaten liegen **ausschließlich serverseitig** in einem Secret
 
 ## Projektstatus
 
-Fundament/Vertragsentwurf, **nicht produktionsbereit**. Die Adapter enthalten Integrationsleitfäden, **noch keine installierbaren ZIPs**. Serverstart lokal: `cd api && npm test && npm start` (Node.js 20+). API-Token und Postgres-basierte Persistenz/Outbox werden vor dem öffentlichen Launch benötigt. Der Demo-Server ist nur für lokale Entwicklung; er verfügt über keine persistente Datenbank.
+Fundament/Vertragsentwurf, **nicht produktionsbereit**. Die Adapter enthalten Integrationsleitfäden, **noch keine installierbaren ZIPs**. Serverstart lokal (Node.js 20+): `cd api && npm test && ABHOLWALD_DEV_TOKEN=$(openssl rand -hex 32) npm start`. Vertrag und Statuscodes: [docs/API.md](docs/API.md). Shop-gebundene Tokens (`ABHOLWALD_SHOP_TOKENS`) gibt es lokal bereits; ausgegebene Produktions-Credentials und Postgres-basierte Persistenz/Outbox werden vor dem öffentlichen Launch benötigt. Der Demo-Server ist nur für lokale Entwicklung; er verfügt über keine persistente Datenbank.
 
 ## Sicherheit und Recht
 
